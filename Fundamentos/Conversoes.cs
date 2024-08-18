@@ -32,6 +32,14 @@ namespace CursoCSharp.Fundamentos
             // jeito mais facil escrevendo o int diretamente no código
             int.TryParse(palavra, out int numero2);
             Console.WriteLine($"Você digitou {numero2}");
+
+            double a;
+            float b;
+
+            // Como essa transformação a gente perde dados 
+            a = 5.1;
+            // é necessário informar de forma explcicita
+            b = (float)a;
         }
 
     }
